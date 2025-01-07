@@ -3,7 +3,7 @@
     column-gap: 20px;
     row-gap: 30px;
     margin:auto;
-    width:90%;
+    /* width:90%; */
     /* align-items: left;
     justify-content: left; */
     flex-wrap: wrap;
@@ -40,4 +40,26 @@
 .priceTxt {
     font-size: 20px;
     font-weight: 500;
+}
+
+.AddButton-button {
+    /* background-color: silver; */
+    padding:0px;
+    width:130px;
+    margin-top: 10px;
+}
+
+.Plusminus-button {
+    /* background-color: silver; */
+    padding:0px;
+    width:50px;
+    margin-top: 10px;
+    text-align: center;
+    color:white
+}
+
+.Txtbox{
+    width: 30px;
+    text-align: center;
+    font-size: 20px;
 }
