@@ -10,7 +10,7 @@ export default function Cart() {
   const [order, setOrder] = useState({});
   const [orderValue, setOrderValue] = useState(0);
   const [items, setItems] = useState(0);
-  
+  const PATH = process.env.REACT_APP_PATH;
   const navigate = useNavigate()
   useEffect(() => {
     setOrderValue((prev) =>
@@ -30,7 +30,7 @@ export default function Cart() {
 
   const submitOrder = () => {
     if (flag < 2) {
-      navigate("/ecomm-react/login");
+      navigate(`${PATH}/login`);
     } else {
       order.date = Date().slice(0, 15);
       order.email = user.email;
@@ -40,7 +40,7 @@ export default function Cart() {
       setOrder((prev) => ({ ...prev, order }));
       setOrders((prev) => [...prev, order]);
       setCartItems(() => []);
-      navigate("/ecomm-react/order");
+      navigate(`${PATH}/order`);
     }
   };
 
